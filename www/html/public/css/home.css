@@ -1,0 +1,763 @@
+* {
+    font-family :-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: all .3s ease;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #be9c79;
+    --black-color: #333;
+    --white-color: #fff;
+    --light-color: #666;
+    --border-color: .1rem solid var(--black-color);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --border-color: .1rem solid var(--black-color);
+    --blue-head: #112e51;
+    --blue: #007bff;
+    --orange: #fd7e14;
+    --green: #28a745;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --primary: #0071bc;
+    --success: #28a745;
+    --info: #17a2b8;
+    --dark: #343a40;
+    --color-text: #5b616b;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--orange);
+    cursor: pointer;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: var(--green);
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.pad-8-15 {
+    padding: 8 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.btn-tutor-blue {
+    background-color: var(--primary);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.btn-tutor-blue:hover {
+    background-color: var(--orange);
+}
+
+.btn-tutor-logout {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 20px;
+}
+
+.btn-tutor-logout:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+.btn-tutor-logout i {
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+/* Header */
+.header .nav-main {
+    height: 75px;
+    background-color: var(--blue-head);
+    position: relative;
+}
+
+.header .nav-main .logo img {
+    position: absolute;
+    top: 8px;
+    height: 4rem;
+}
+
+.header .nav-main ul {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+.header .nav-main ul li{
+    margin-top: 18px;
+    display: inline-block;
+    color: var(--white);
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header .nav-main ul li a {
+    color: var(--white);
+
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #15161641;
+}
+
+.header .flex .navbar a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    padding: 1rem 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header .flex .navbar a:hover {
+    text-decoration: none;
+    color: #0071bc;
+    background-color: #ccc;
+
+}
+
+#menu-btn {
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+    line-height: 75px;
+    padding: 0 15px;
+    height: 85px;
+}
+
+#menu-btn span{
+    margin-left: 10px;
+}
+
+.btn-home{
+    margin-bottom: 20px;
+}
+
+/* Header end */
+
+/* Home css start */
+.home {
+    position: relative;
+    max-width: 100%;
+    background-size: cover; 
+    height: 600px;  
+}
+
+.home .content {
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    max-width: 24rem;
+    border-radius: 5px;
+    padding: 32px 30px;
+    background-color: #fff;
+    line-height: 1.5;
+    box-shadow: 0 0 8px var(--dark);
+    align-items: center;
+}
+
+.home .content h1,
+.home .content p,
+.home .content a {
+    margin-bottom: 15px;
+}
+
+.home .content .btn-regit {
+    display: inline-block;
+    background-color: var(--orange);
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 6px 12px;
+    border-radius: 7px;
+}
+
+.home .content .btn-regit:hover {
+    background-color: var(--green);
+}
+/* Home css end */
+
+/* Introduce css end */
+.introduce {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.introduce .img img{
+    max-width: 100%;
+    height: 250px;
+}
+
+.introduce .content {
+    margin-left: 50px;
+    width: 700px;
+}
+
+.introduce .content .btn-page-tutor{
+    background-color: var(--green);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.introduce .content .btn-page-tutor:hover{
+    background-color: var(--orange);
+}
+
+.introduce .content .join .join-logit {
+    margin-right: 10px;
+}
+/* Introduce css end */
+
+/* Hire css end */
+.hire {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7f8;
+    max-width: 100%;    
+}
+
+.hire .img img{
+    max-width: 100%;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.hire .content {
+    text-align: justify;
+    width: 700px;
+}
+
+.hire .sub-headline {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Hire css end */
+
+/* Choose css start */
+.choose {
+    padding: 50px;
+}
+
+.choose .text-heading {
+    font-size: 36px;
+    color: #333;
+}
+
+.choose .choose-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choose .choose-box .choose-content{
+    padding: 40px;
+    text-align: center;
+
+}
+
+.choose .choose-box .choose-content img{
+    max-width: 100%;
+    height: 90px;
+}
+/* Choose css end */
+
+/* benefit css start */
+.benefit {
+    background-color: #f5f7f8;
+    padding: 50px;
+}
+
+.benefit .text-heading{
+    font-size: 36px;
+    color: #333;
+}
+
+.benefit .benefit-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 20px;
+}
+
+.benefit .benefit-box .benefit-content{
+    display: flex;
+    margin: 0 30px;
+    padding-bottom: 30px;
+}
+
+.benefit .benefit-box .benefit-content i{
+    margin-right: 12px;
+    font-size: 32px;
+    color: var(--green);    
+}
+
+/* benefit css end */
+
+/* Service css start */
+.service {
+    padding: 50px;
+}
+
+.service .text-heading{
+    font-size: 36px;
+    color: #333;
+}
+
+.service .service-contain {
+    padding: 0 100px;
+}
+
+.service .service-contain .service-sub-heading{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.service .service-contain .service-block{
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.service .service-contain .service-block .service-block-content {
+    margin-left: 15px;
+}
+
+.service .service-contain .service-block .service-block-content .block-content{
+    margin-bottom: 10px;
+}
+
+.service .service-contain .service-block .icon-number{
+    height: 40px;
+    width: 6%;
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--cyan);
+    left: 0;
+    top: -3px;
+}
+
+.service .line::before {
+    content: "\00a0";
+    display: inline-block;
+    background: #0071bc;
+    height: 1px;
+    position: relative;
+    width: 100%;
+}
+
+.service .line {
+    width: 90%;
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.service .line::after {
+    content: "◆";
+    display: inline-block;
+    position: relative;
+    top: -2.25rem;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.6rem;
+    color: #e31c3d;
+    background: #fff;
+}
+/* Service css end */
+/* Contact css start */
+.contact {
+    padding: 0 50px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.contact .contact-container {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.contact .contact-container .contact-phone{ 
+    position: absolute;
+    bottom: 120px;
+    right: 400px;
+}
+
+.contact .contact-container .contact-call i, a{
+    color: var(--primary);
+}
+
+.contact .contact-container .contact-call {
+    margin-bottom: 10px;
+}
+
+.contact .contact-container .text-heading,
+.contact .contact-container .contact-disc
+{
+    margin-bottom: 20px;
+}
+
+.return {
+    position: absolute;
+    right: 70px;
+    bottom: 120px;
+    padding: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#return {
+    height: 150px;
+}
+
+.return:hover {
+    color: var(--white);
+    background-color: var(--orange);   
+}
+/* Contact css end */
+
+
+/* Responsive */
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header .nav-main ul .nav-phone {
+        display: none;
+    }
+
+    .header .flex .navbar .login-regit {
+        display: none;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 740px){
+
+    .header .flex .login-regit{
+        margin-left: 35px;
+    }
+
+    .header .nav-main #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+        height: 75px;
+    }
+
+    .header .nav-main #menu-btn .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .flex .navbar.active{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+        z-index: 100;
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white-color);
+        border-top: var(--border-color);
+        border-bottom: var(--border-color);
+        clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+
+    .header .nav-main{
+        max-width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .flex .navbar a{
+        display: block;
+        z-index: 1;
+    }
+
+    .header .nav-main ul{
+        display: none;
+    }  
+
+    /* responesive home */
+    .home .content {
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .home .content .btn-regit {
+        font-size: 1rem;
+    }
+
+    /* responesive introduce */
+    .introduce {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 10px 10px 0;
+        text-align: justify;
+    }
+
+    .introduce .img img {
+        width: 100%;
+    }
+
+    .introduce .content {
+        padding: 20px 20px 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .introduce .content .join .join-logit {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .hire {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px;
+        justify-content: center;
+        background-color: #f5f7f8;
+        height: auto;
+        max-width: 100%;    
+    }
+
+    .choose .choose-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    /* benefit css start */
+    .benefit .benefit-box {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+    }
+
+    .benefit .benefit-box .benefit-content{
+        display: flex;
+        margin: 0 30px;
+        padding-bottom: 30px;
+    }
+
+    .benefit .benefit-box .benefit-content i{
+        margin-right: 12px;
+        font-size: 32px;
+        color: var(--green);    
+    }
+
+    .service .service-contain {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .service .service-contain .service-block .icon-number{
+        height: 40px;
+        width: 70%;
+        border-radius: 50%;
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: var(--cyan);
+        left: 0;
+        top: -3px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact .text-heading {
+        text-align: center;
+    }
+
+    .contact .contact-container {
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        margin: 0;
+    }
+
+    .contact .contact-container .contact-phone {
+        margin-bottom: 40px;
+    }
+
+    .contact .contact-container .contact-phone .btn-tutor-blue{ 
+        font-size: 15px;
+    }
+    
+    .contact .contact-container .contact-phone .btn-tutor-blue i{ 
+        margin-top: 40px;
+        font-size: 15px;
+    }
+}
+/* Slideshow container */
+.slideshow-container {
+    width:100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .mySlides.fade img {
+      height: 500px;
+  }

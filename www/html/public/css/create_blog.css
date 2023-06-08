@@ -1,0 +1,413 @@
+* {
+    font-family :-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: all .3s ease;
+    max-width: 100%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.my-navbar {
+    height: 3rem;
+}
+
+.align-items-center {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-1,.col-2,.col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+.col, .col-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7,
+.col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-md, .col-md-1, .col-md-2,
+.col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11,
+.col-md-12, .col-md-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-xl, .col-xl-1,
+.col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10,
+.col-xl-11, .col-xl-12, .col-xl-auto
+{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.mt-4, .my-4 {
+    margin-top: 1.5rem !important;
+}
+
+:root {
+    --main-color: #be9c79;
+    --black-color: #333;
+    --white-color: #fff;
+    --light-color: #666;
+    --border-color: .1rem solid var(--black-color);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --blue-head: #112e51;
+    --blue: #007bff;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #0071bc;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --black: #212529; 
+    --color-text: #5b616b;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--orange);
+    cursor: pointer;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: var(--green);
+}
+
+.btn-tutor-blue {
+    background-color: var(--primary);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.btn-tutor-blue:hover {
+    background-color: var(--orange);
+}
+
+.btn-tutor-logout {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 20px;
+}
+
+.btn-tutor-logout:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+.btn-tutor-logout i {
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.btn-tutor-blue {
+    background-color: var(--primary);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.header .nav-main #menu-btn {
+    display: none;
+    -webkit-font-smoothing: auto;
+    background-color: #0071bc;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    padding: 0 25px;
+    font-size: .8rem;
+    height: 75px;
+    line-height: 75px;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Header */
+.header .nav-main {
+    height: 75px;
+    background-color: var(--blue-head);
+    position: relative;
+}
+
+.header .nav-main .logo img {
+    position: absolute;
+    top: 8px;
+    height: 4rem;
+}
+
+.header .nav-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 3rem;
+}
+
+.header .nav-main ul {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+.header .nav-main ul li{
+    display: inline-block;
+    color: var(--white);
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header .nav-main ul li a {
+    color: var(--white);
+
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #333;
+}
+
+.header .flex .navbar a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    padding: 1rem 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header .flex .navbar a:hover {
+    text-decoration: none;
+    color: #0071bc;
+    background-color: #ccc;
+
+}
+
+.header .flex .login-regit a {
+    color: var(--color-text);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.header .flex .login-regit a:hover {
+    text-decoration: underline;
+    color: var(--orange);
+}
+
+#menu-btn span{
+    margin-left: 10px;
+}
+
+/* Header end */
+
+/* start main */
+.main{
+    width: 100%;
+}
+.main .tilte{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.form{
+    width: 100%;
+    padding: 10px 100px;
+}
+
+.input-value{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.input-value .name-title{
+    font-size: 18px;
+}
+.input-value input{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    padding: 2px 10px;
+}
+
+.select-input{
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.input-value textarea{
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    resize: vertical;
+}
+#myTextarea{
+    height: 600px;
+}
+.input-value button {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 79, 170);
+    color: white;
+}
+.input-value button:hover{
+    background-color: rgb(72, 12, 238);
+}
+/* end main */
+
+
+@media (max-width: 1024px){
+
+    .header .nav-main .nav-phone{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .head-text {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header .flex .navbar{
+        display: none;
+    }
+
+    .header .nav-main .nav-phone{
+        display: none;
+    }
+
+    .form{
+        padding: 10px 30px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 740px){
+
+    .header .nav-main #menu-btn {
+        display: inline;
+        transition: .2s linear;
+        height: 75px;
+    }
+
+    .header .nav-main #menu-btn .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white-color);
+        border-top: var(--border-color);
+        border-bottom: var(--border-color);
+        clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+
+    .header .flex .navbar.active{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+        z-index: 100;
+    }
+
+    .header .nav-main ul{
+        display: none;
+    }
+
+    .flex .navbar a{
+        display: block;
+        z-index: 1;
+    }
+
+    .header .nav-main .logo img {
+        position: absolute;
+        /* top: 8px; */
+        left: 10px;
+        height: 64px;
+    }
+
+    .form{
+        padding: 10px 30px;
+    }
+
+    #myTextarea{
+        height: 200px;
+    }
+}
