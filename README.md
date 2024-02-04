@@ -1,6 +1,14 @@
 ## Website đăng ký gia sư
 Mô tả: Trang web kết nối giữa gia sư và phụ huynh, học sinh
 
+Demo: https://nguyencongquyen.com/trung-tam-gia-su/
+______________________________________________________
+- User: giasu@gmail.com
+- Password: giasu
+______________________________________________________
+- Admin: admin@gmail.com
+- Passwprd: admin
+______________________________________________________
 Chức năng:
 1. Đối với người dùng :
 Khách hàng có thể đăng ký/ đăng nhập vào hệ thống
